@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("IMAGE/hotel12.jpg") no-repeat center center/cover;
+    color: #000000;    
+
+}
+
+header {
+    background: #0bbbce;
+    color: #fff;
+    padding: 10px;
+    margin:10 ;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+nav .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    
+}
+
+nav .nav-links li {
+    display: inline;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+nav ul li a:hover {
+    border-bottom: 3px solid #f1f0ee;
+    border-bottom: 30px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+
+.hero {
+    background: url("IMAGE/hotel.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(204, 200, 200, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f68fe2;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.bounce {
+    animation: bounce 1s ease-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.reveal {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+section{
+    padding: 20px;
+    margin: 20px;
+    background: rgba(210, 194, 194, 0.6);
+    border-radius: 10px;
+    color: rgb(253, 252, 252);
+}
+
+
+ .container {
+   
+    border-radius: 20px;
+    height: 400px;
+    display:flex;
+    display: inline; 
+    width: 730px;
+    aspect-ratio: 20/13; 
+    object-fit: cover;
+   margin-left: 20px;
+}
+input{ 
+    padding: 7px;
+    margin-left: 30%;
+    border-radius: 5px;
+    border: 1px solid #e15f5f;
+    width: 30%;
+    display: flex;
+}
+legend{
+    font-size: 25px;
+    font-weight: bold;
+    color: #4780a1;
+    margin-left: 20px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4780a1;
+    margin-left: 20px;
+}
